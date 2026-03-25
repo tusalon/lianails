@@ -1,22 +1,22 @@
-// sw.js - Service Worker para My Sweet Met
+// sw.js - Service Worker para Lia Nails
 
-const CACHE_NAME = 'mysweetmet-v1';
+const CACHE_NAME = 'lianails-v1';
 const urlsToCache = [
-  '/mysweetmet/',
-  '/mysweetmet/index.html',
-  '/mysweetmet/admin.html',
-  '/mysweetmet/admin-login.html',
-  '/mysweetmet/setup-wizard.html',
-  '/mysweetmet/editar-negocio.html',
-  '/mysweetmet/manifest.json',
-  '/mysweetmet/icons/icon-72x72.png',
-  '/mysweetmet/icons/icon-96x96.png',
-  '/mysweetmet/icons/icon-128x128.png',
-  '/mysweetmet/icons/icon-144x144.png',
-  '/mysweetmet/icons/icon-152x152.png',
-  '/mysweetmet/icons/icon-192x192.png',
-  '/mysweetmet/icons/icon-384x384.png',
-  '/mysweetmet/icons/icon-512x512.png'
+  '/lianails/',
+  '/lianails/index.html',
+  '/lianails/admin.html',
+  '/lianails/admin-login.html',
+  '/lianails/setup-wizard.html',
+  '/lianails/editar-negocio.html',
+  '/lianails/manifest.json',
+  '/lianails/icons/icon-72x72.png',
+  '/lianails/icons/icon-96x96.png',
+  '/lianails/icons/icon-128x128.png',
+  '/lianails/icons/icon-144x144.png',
+  '/lianails/icons/icon-152x152.png',
+  '/lianails/icons/icon-192x192.png',
+  '/lianails/icons/icon-384x384.png',
+  '/lianails/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/mysweetmet/icons/icon-192x192.png');
+            return caches.match('/lianails/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para My Sweet Met');
+console.log('✅ Service Worker configurado para Lia Nails');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);

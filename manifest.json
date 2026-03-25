@@ -1,20 +1,20 @@
 {
-  "name": "My Sweet Met",
-  "short_name": "SweetMet",
+  "name": "Lia Nails",
+  "short_name": "Lia",
   "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/mysweetmet/",
-  "scope": "/mysweetmet/",
+  "start_url": "/lianails/",
+  "scope": "/lianails/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/mysweetmet/icons/icon-192x192.png",
+      "src": "/lianails/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/mysweetmet/icons/icon-512x512.png",
+      "src": "/lianails/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
